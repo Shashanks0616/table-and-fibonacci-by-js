@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Table</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+               <th>S.no</th>
+               <th>Last fibonacci 
+                number</th>
+                <th>Fibonacci series</th>
+                <th>Prime number</th>
+           </tr>
+
+           <tr>
+               <td>1</td>
+               <td>1</td>
+               <td>(1,1)</td>
+               <td>(0)</td>
+           </tr>
+
+           <tr>
+               <td>2</td>
+               <td>2</td>
+               <td>(1,1,2)</td>
+               <td>(2)</td>
+           </tr>
+
+           <tr>
+               <td>3</td>
+               <td>3</td>
+               <td>(1,1,2,3)</td>
+               <td>(2,3)</td>            
+
+           </tr>
+           <tr>
+               <td>4</td>
+               <td>5</td>
+               <td>(1,1,2,3,5)</td>
+               <td>(2,3,5)</td>
+           </tr>
+
+           <tr>
+               <td>5</td>
+               <td>8</td>
+               <td>(1,1,2,3,5,8)</td>
+               <td>(2,3,5,7)</td>
+          </tr>
+
+          <tr>
+              <td>6</td>
+              <td>13</td>
+              <td>(1,1,2,3,5,8,13)</td>
+              <td>(2,3,5,7,11,13)</td>
+          </tr>
+
+            
+        </table>
+    </div>
+</body>
+
+
+<script>
+
+    // Here you can find the fibonnacci series of the given number:
+    
+    var n1 = 0,  n2 = 1, next_num, i;  
+var num = parseInt (prompt (" Enter the limit for Fibonacci Series "));  
+document.write( "Fibonacci Series: ");  
+for ( i = 1; i <= num; i++)  
+{  document.write (" <br> " +  n1); // print the n1  
+    next_num = n1 + n2; // sum of n1 and n2 into the next_num  
+      
+    n1 = n2; // assign the n2 value into n2  
+    n2 = next_num; // assign the next_num into n2  
+}  
+  
+</script>
+</html>
